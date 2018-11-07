@@ -14,6 +14,7 @@
         box-shadow: 0 1rem 2rem rgba($color-black,0.2);
 
         &::after {
+            background-color: inherit;
             transform: scale(1.3,1.5);
             opacity: 0;
         }
@@ -25,6 +26,7 @@
     }
     &::after {
         content: "";
+        background-color: inherit;
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -43,10 +45,17 @@
             background-color: $color-white;
         }
     }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
     &--animated {
         animation: moveInBottom .5s ease .75s;
         animation-fill-mode: backwards;
     }
+
 }
 
 .btn-text {

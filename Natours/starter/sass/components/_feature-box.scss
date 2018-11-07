@@ -1,13 +1,21 @@
 .feature-box {
     text-align: center;
-    padding: 20px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.5);
-    background-color: rgba($color-white, 0.7);
-    &__header-icon {
+    padding: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    background-color: rgba($color-white, 0.8);
+    font-size: 1.5rem;
+    transition: all .2s;
+    &__icon {
+        display: inline-block;
         background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
-        font-size: 7rem;
+        font-size: 6rem;
+        margin-bottom: .6rem;
+    }
+
+    &:hover {
+        transform: scale(1.03) translateY(-1.5rem);
     }
 }
