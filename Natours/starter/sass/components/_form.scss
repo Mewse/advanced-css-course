@@ -46,6 +46,8 @@
 		transition: all .3s;
 	}
 
+	
+
 	&__input:placeholder-shown + &__label {
 		opacity: 0;
 		visibility: hidden;
@@ -53,8 +55,12 @@
 	}
 
 	&__radio-group {
-		width: 49%;
+		width: 40%;
 		display: inline-block;
+	}
+
+	&__radio-input {
+		display: none;
 	}
 
 	&__radio-label {
@@ -85,7 +91,12 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			background-color: $color-primary;
+			transition: opacity .2s;
 			opacity: 0;
 		}
+	}
+
+	&__radio-input:checked ~ &__radio-label &__radio-button::after {
+		opacity: 1;
 	}
 }
